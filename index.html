@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/flexbox.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Ficha de Personagem</title>
 </head>
 <body>
-    <section class="principal">
+    <section class="card">
         <div><input type="text" placeholder="Nome do Personagem"></div>
         
         <div>
@@ -27,7 +27,7 @@
         </div>
         
     </section>
-    <section class="principal">
+    <section class="card">
         
         <div>
             Nível
@@ -57,8 +57,8 @@
         </div>
     </section>
     
-    <section class="principal">
-        <!-- Barra 2 -->
+    <section class="card">
+        
         <div>Classe de Armadura
             <input type="text" placeholder="" size="2"></div>
             <div>Iniciativa
@@ -66,66 +66,70 @@
                 <div>Deslocamento
                     <input type="text" placeholder="" size="2"></div>
                 </section>
-                <section class="principal">
-                    <!-- Barra 3 -->
+                <section class="card">
                     <div>PV
                         <input type="text" placeholder="" size="2"></div>
                         <div>Dados de Vida
-                            <input type="text" placeholder=""></div>
-                            <div>Testes Contra a Morte
-                                <input type="text" placeholder=""></div>
-                            </section>
-                            <section class="principal">
-                                <div>Força</div>
-                                <div>Destreza</div>
-                                <div>Constituição</div>
-                            </section>
-                            <section class="principal">
-                                <div>Inteligência</div>
-                                <div>Sabedoria</div>
-                                <div>Carisma</div>
-                            </section>
+                            <input type="text" placeholder="">
+                        </div>
+                </section>
+                        <section class="card status">
+                            <div class="card-menor wrap">Força</div>
+                            <div class="card-menor wrap">Inteligência</div>
+                            <div class="card-menor wrap">Destreza</div>
+                            <div class="card-menor wrap">Sabedoria</div>
+                            <!-- </section>
+                                <section class="status"> -->
+                            <div class="card-menor wrap">Constituição</div>
                             
-                            <section class="principal">
-                                <div>
-                                    <label for="ataquesemagias">⚔ Ataques e Magias</label>
-                                    
-                                    <form class="form" action="">
-                                        <input class="form-input" type="text" data-form-input>
-                                        <button class="form-button" data-form-button>Adicionar</button>
-                                    </form>
-                                    
-                                    <ul data-list>
-                                        
-                                    </ul>
-                                    
-                                </div>
-                                <!-- <textarea id="ataquesemagias" name="ataquesemagias" rows="8" cols="41" style="resize: none;"></textarea> -->
+                            <div class="card-menor wrap">Carisma</div>
+                        </section>
+                        
+                        <section class="card">
+                            <div>
+                                <label for="ataquesemagias">Ataques e Magias</label>
                                 
-                            </section>
+                                <form class="form" action="">
+                                    <input class="form-input" type="text"  size="39" data-form-input>
+                                    <button class="form-button" data-form-button>+</button>
+                                </form>
+                                
+                                <ul data-list>
+                                    
+                                </ul>
+                                
+                            </div>
                             
-                            <section class="principal">
-                                <div>
-                                    <label for="equipamentos">🛡 Equipamentos</label>
+                        </section>
+                        
+                        <section class="card">
+                            <div>
+                                <label for="equipamentos">Equipamentos</label>
+                                
+                                <form class="form" action="">
+                                    <input class="form-input" type="text" size="39" data-form-input-2>
+                                    <button class="form-button" data-form-button-2>+</button>
+                                </form>
+                                
+                                <ul data-list-2>
                                     
-                                    <form class="form" action="">
-                                        <input class="form-input" type="text" data-form-input-2>
-                                        <button class="form-button" data-form-button-2> Adicionar </button>
-                                    </form>
-                                    
-                                    <ul data-list-2>
-                                        
-                                    </ul>
-                                    
-                                </div>
-                                    <!-- <textarea id="equipamentos" name="equipamentos" rows="8" cols="41" style="resize: none;"></textarea> -->
-                                </section>
-                                <section class="principal">
-                                    <div>Bônus de Proficiência</div>
-                                    <div>Inspiração</div>
-                                    <div>Sabedoria Passiva</div>
-                                    <div>Idiomas e Outras Proficiências</div>
-                                </section>
-                                <script type="module" src="main.js"></script>
-                            </body>
-                            </html>
+                                </ul>
+                                
+                            </div>
+                            
+                        </section>
+                        <section class="card">
+                            <div>Bônus de Proficiência</div>
+                            <div>Inspiração</div>
+                            <div>Sabedoria Passiva</div>
+                            <div>Idiomas e Outras Proficiências</div>
+                        </section>
+                        
+                        <section class="card">
+                            <div>Testes Contra a Morte</div>
+                            <div>seta</div>
+                        </section>
+                        
+                        <script type="module" src="main.js"></script>
+                    </body>
+                    </html>
