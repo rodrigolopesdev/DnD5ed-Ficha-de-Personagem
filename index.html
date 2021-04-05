@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ficha de Personagem</title>
+    <title>Ficha de Personagem 5e</title>
 </head>
 <body>
     <section class="card">
         <div><input type="text" placeholder="Nome do Personagem"></div>
         
         <div>
-            <label for="raca">Raça</label>
             <select name="raca" id="raca">
+                <option value="" disabled selected>Raça</option>
                 <option value="Anão">Anão</option>
                 <option value="Elfo">Elfo</option>
                 <option value="Halfling">Halfling</option>
@@ -28,15 +28,14 @@
         
     </section>
     <section class="card">
-        
         <div>
-            Nível
-            <input type="text" placeholder="" size="2">
+            <label>Nível</label>
+            <input type="text" size="2">
         </div>
-        
         <div>
             <label for="classe">Classe</label>
             <select name="classe" id="classe">
+                <option value="" disabled selected>Classe</option>
                 <option value="Bárbaro">Bárbaro</option>
                 <option value="Bardo">Bardo</option>
                 <option value="Bruxo">Bruxo</option>
@@ -52,81 +51,114 @@
             </select> 
         </div>
         <div>
-            Pontos de Experiência
-            <input type="text" placeholder="">
+            <label>Pontos de Experiência</label>
+            <input type="text">
         </div>
     </section>
     
     <section class="card">
+        <div>
+            <label>CA</label>
+            <input type="text" size="2">
+        </div>
+        <div>
+            <label>Iniciativa</label>
+            <input type="text" size="2">
+        </div>
+        <div>
+            <label>Deslocamento</label>
+            <input type="text" size="2">
+        </div>
+    </section>
+    
+    <section class="card">
+        <div>
+            <label>Pontos de Vida</label>
+            <input type="text" size="2">
+        </div>
+        <div>
+            <label>Dados de Vida</label>
+            <input type="text" >
+        </div>
+    </section>
+        <section class="card status">
+            <div class="card menor wrap">
+                <label>Força</label>
+                X
+                <input type="text" style="text-align:center;" size="2">
+            </div>
+            <div class="card menor wrap">
+                <label>Inteligência</label>
+                X
+                <input type="text" style="text-align:center;" size="2">
+            </div>
+            <div class="card menor wrap">
+                <label>Destreza</label>
+                X
+                <input type="text" style="text-align:center;" size="2">
+            </div>
+            <div class="card menor wrap">
+                <label>Sabedoria</label>
+                X
+                <input type="text" style="text-align:center;" size="2">
+            </div>
+            <div class="card menor wrap">
+                <label>Constituição</label>
+                X
+                <input type="text" style="text-align:center;" size="2">
+            </div>
+            <div class="card menor wrap">
+                <label>Carisma</label>
+                X
+                <input type="text" style="text-align:center;" data-modificador size="2">
+            </div>
+        </section>
         
-        <div>Classe de Armadura
-            <input type="text" placeholder="" size="2"></div>
-            <div>Iniciativa
-                <input type="text" placeholder="" size="2"></div>
-                <div>Deslocamento
-                    <input type="text" placeholder="" size="2"></div>
-                </section>
-                <section class="card">
-                    <div>PV
-                        <input type="text" placeholder="" size="2"></div>
-                        <div>Dados de Vida
-                            <input type="text" placeholder="">
-                        </div>
-                </section>
-                        <section class="card status">
-                            <div class="card-menor wrap">Força</div>
-                            <div class="card-menor wrap">Inteligência</div>
-                            <div class="card-menor wrap">Destreza</div>
-                            <div class="card-menor wrap">Sabedoria</div>
-                            <div class="card-menor wrap">Constituição</div>
-                            <div class="card-menor wrap">Carisma</div>
-                        </section>
-                        
-                        <section class="card">
-                            <div>
-                                <label for="ataquesemagias">Ataques e Magias</label>
-                                
-                                <form class="form" action="">
-                                    <input class="form-input" type="text"  size="39" data-form-input>
-                                    <button class="form-button" data-form-button>+</button>
-                                </form>
-                                
-                                <ul data-list>
-                                    
-                                </ul>
-                                
-                            </div>
-                            
-                        </section>
-                        
-                        <section class="card">
-                            <div>
-                                <label for="equipamentos">Equipamentos</label>
-                                
-                                <form class="form" action="">
-                                    <input class="form-input" type="text" size="39" data-form-input-2>
-                                    <button class="form-button" data-form-button-2>+</button>
-                                </form>
-                                
-                                <ul data-list-2>
-                                    
-                                </ul>
-                                
-                            </div>
-                            
-                        </section>
-                        <section class="card">
-                            <div>Bônus de Proficiência</div>
-                            <div>Inspiração</div>
-                            <div>Sabedoria Passiva</div>
-                            <div>Idiomas e Outras Proficiências</div>
-                        </section>
-                        
-                        <section class="card">
-                            <div>Testes Contra a Morte</div>
-                            <div>seta</div>
-                        </section>
-                        
-                        <script type="module" src="main.js"></script>
-                    </body>
-                    </html>
+        <section class="card">
+            <div>
+                <label for="ataquesemagias">Ataques e Magias</label>
+                
+                <form class="form" action="">
+                    <input class="form-input" type="text"  size="35" data-form-input>
+                    <button class="form-button" data-form-button>+</button>
+                </form>
+                
+                <ul data-list>
+                    
+                </ul>
+                
+            </div>
+            
+        </section>
+        
+        <section class="card">
+            <div>
+                <label for="equipamentos">Equipamentos</label>
+                
+                <form class="form" action="">
+                    <input class="form-input" type="text" size="35" data-form-input-2>
+                    <button class="form-button" data-form-button-2>+</button>
+                </form>
+                
+                <ul data-list-2>
+                    
+                </ul>
+                
+            </div>
+            
+        </section>
+        <section class="card">
+            <div>Bônus de Proficiência</div>
+            <div>Inspiração</div>
+            <div>Sabedoria Passiva</div>
+            <div>Idiomas e Outras Proficiências</div>
+        </section>
+        
+        <section class="card">
+            <div>Testes Contra a Morte</div>
+            <div>seta</div>
+        </section>
+        
+        <script type="module" src="main.js"></script>
+    </body>
+    </html>
