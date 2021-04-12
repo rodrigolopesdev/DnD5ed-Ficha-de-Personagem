@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
     <title>Ficha de Personagem 5e</title>
 </head>
 <body>
@@ -29,11 +30,11 @@
     </section>
     <section class="card">
         <div>
-            <label>Nível</label>
+            <label>Nível</label><br>
             <input type="text" size="2">
         </div>
         <div>
-            <label for="classe">Classe</label>
+            <label for="classe">Classe</label><br>
             <select name="classe" id="classe">
                 <option value="" disabled selected>Classe</option>
                 <option value="Bárbaro">Bárbaro</option>
@@ -51,33 +52,33 @@
             </select> 
         </div>
         <div>
-            <label>Pontos de Experiência</label>
+            <label>Pontos de Experiência</label><br>
             <input type="text">
         </div>
     </section>
     
     <section class="card">
         <div>
-            <label>CA</label>
+            <label>CA</label><br>
             <input type="text" size="2">
         </div>
         <div>
-            <label>Iniciativa</label>
+            <label>Iniciativa</label><br>
             <input type="text" size="2">
         </div>
         <div>
-            <label>Deslocamento</label>
+            <label>Deslocamento</label><br>
             <input type="text" size="2">
         </div>
     </section>
     
     <section class="card">
         <div>
-            <label>Pontos de Vida</label>
+            <label>Pontos de Vida</label><br>
             <input type="text" size="2">
         </div>
         <div>
-            <label>Dados de Vida</label>
+            <label>Dados de Vida</label><br>
             <input type="text" >
         </div>
     </section>
@@ -110,43 +111,36 @@
             <div class="card menor wrap">
                 <label>Carisma</label>
                 X
-                <input type="text" style="text-align:center;" data-modificador size="2">
+                <input type="text" style="text-align:center;" size="2">
             </div>
         </section>
         
         <section class="card">
             <div>
                 <label for="ataquesemagias">Ataques e Magias</label>
-                
                 <form class="form" action="">
                     <input class="form-input" type="text"  size="30" data-form-input>
                     <button class="form-button" data-form-button>+</button>
                 </form>
-                
                 <ul data-list>
                     
                 </ul>
-                
             </div>
-            
         </section>
         
         <section class="card">
             <div>
                 <label for="equipamentos">Equipamentos</label>
-                
                 <form class="form" action="">
                     <input class="form-input" type="text" size="30" data-form-input-2>
                     <button class="form-button" data-form-button-2>+</button>
                 </form>
-                
                 <ul data-list-2>
                     
                 </ul>
-                
             </div>
-            
         </section>
+
         <section class="card">
             <div>Bônus de Proficiência</div>
             <div>Inspiração</div>
@@ -154,11 +148,32 @@
             <div>Idiomas e Outras Proficiências</div>
         </section>
         
-        <section class="card">
-            <div>Testes Contra a Morte</div>
-            <div>seta</div>
+        <section class="card wrap">
+            
+            <div class="linerow">
+                Testes Contra a Morte &nbsp;&nbsp;&nbsp;<span class="material-icons colapse" id="colapse">expand_more</span>
+            </div>
+            <div class="saving" id="saving">
+                <div class="wrap">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="wrap">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="wrap">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            
         </section>
-        
-        <script type="module" src="main.js"></script>
+
+        <section class="card">
+            <span class="material-icons-outlined">info</span>
+        </section>
+
+        <script type="module" src="./componentes/main.js"></script>
     </body>
     </html>
