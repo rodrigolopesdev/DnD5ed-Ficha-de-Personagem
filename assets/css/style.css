@@ -6,6 +6,13 @@ input, select{
   border:1px solid;
 }
 
+form {
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+
 .card {
   background: #fff;
   display: flex;
@@ -51,14 +58,6 @@ input, select{
   cursor: pointer;
 }
 
-.saving {
-  display: none;
-}
-
-.saving.show {
-  display: flex;
-}
-
 .dot {
   height: 25px;
   width: 25px;
@@ -70,4 +69,21 @@ input, select{
 
 .dot.black {
   background-color: #000;
+}
+
+/* .hello {
+  display:inline-block;
+  align-items: baseline;
+  flex-direction: column;
+} */
+
+li.div {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
 }

@@ -85,8 +85,8 @@
         <section class="card status">
             <div class="card menor wrap">
                 <label>Força</label>
-                X
-                <input type="text" style="text-align:center;" size="2">
+                <span id="outputModificador"></span>
+                <input id="inputModificador" type="number" size="2">
             </div>
             <div class="card menor wrap">
                 <label>Inteligência</label>
@@ -120,7 +120,10 @@
                 <label for="ataquesemagias">Ataques e Magias</label>
                 <form class="form" action="">
                     <input class="form-input" type="text"  size="30" data-form-input>
-                    <button class="form-button" data-form-button>+</button>
+                    <!-- <button class="form-button" data-form-button>+</button> -->
+                    <span class="material-icons-outlined" data-form-button>add_circle_outline</span>
+                    <!-- PARA REMOVER -->
+                    <!-- <span class="material-icons-outlined" data-form-button>remove_circle_outline</span> -->
                 </form>
                 <ul data-list>
                     
@@ -133,7 +136,8 @@
                 <label for="equipamentos">Equipamentos</label>
                 <form class="form" action="">
                     <input class="form-input" type="text" size="30" data-form-input-2>
-                    <button class="form-button" data-form-button-2>+</button>
+                    <!-- <button class="form-button" data-form-button-2>+</button> -->
+                    <span class="material-icons-outlined" data-form-button-2>add_circle_outline</span>
                 </form>
                 <ul data-list-2>
                     
@@ -141,28 +145,28 @@
             </div>
         </section>
 
-        <section class="card">
+        <!-- <section class="card">
             <div>Bônus de Proficiência</div>
             <div>Inspiração</div>
             <div>Sabedoria Passiva</div>
             <div>Idiomas e Outras Proficiências</div>
-        </section>
+        </section> -->
         
-        <section class="card wrap">
+        <section class="card">
             
-            <div class="linerow">
-                Testes Contra a Morte &nbsp;&nbsp;&nbsp;<span class="material-icons colapse" id="colapse">expand_more</span>
+            <div>
+                <form>
+                    <label>Testes Contra a Morte</label>
+                </form>
             </div>
-            <div class="saving" id="saving">
-                <div class="wrap">
+            <div class="saving" id="colapse">
+                <div>
                     <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-                <div class="wrap">
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
-                <div class="wrap">
+                <div>
+                    <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
@@ -172,6 +176,22 @@
 
         <section class="card">
             <span class="material-icons-outlined">info</span>
+        </section>
+
+        <section class="card">
+            <div>
+                <img src="./assets/imagens/lopesReddit.png" width="150em" alt="Avatar do Reddit do Rodrigo Lopes">
+            </div>
+            
+            <div>
+                <ul>
+                    <li><span class="material-icons-outlined">info</span> <a href="#">Lopes</a></li>
+                    <li><span class="material-icons-outlined">info</span> <a href="#">github</a></li>
+                    <li><span class="material-icons-outlined">info</span> <a href="#">dev.to</a></li>
+                    <li><span class="material-icons-outlined">info</span> <a href="#">twitter</a></li>
+                    <li><span class="material-icons-outlined">info</span> <a href="#">twitch</a></li>
+                </ul>
+            </div>
         </section>
 
         <script type="module" src="./componentes/main.js"></script>
