@@ -1,3 +1,5 @@
+import DeletarDaLista from './deletarDaLista.js'
+
 const adicionarItem = (evento) => {
     evento.preventDefault()
     
@@ -9,6 +11,7 @@ const adicionarItem = (evento) => {
     const conteudo = `<p>${valor}</p>`
     tarefa.innerHTML = conteudo
     
+    tarefa.appendChild(DeletarDaLista())
     lista.appendChild(tarefa)
     input.value = ""
     return adicionarItem
