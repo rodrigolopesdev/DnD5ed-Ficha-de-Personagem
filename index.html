@@ -79,39 +79,39 @@
         </div>
         <div>
             <label>Dados de Vida</label><br>
-            <input type="text" >
+            <input type="text">
         </div>
     </section>
         <section class="card status">
             <div class="card menor wrap">
                 <label>Força</label>
-                <span id="outputModificador"></span>
-                <input type="number" size="2" data-mod>
+                <span id="outputForca"></span>
+                <input id="inputForca" type="number" size="2" oninput="modForca(this.value)" onchange="modForca(this.value)">
             </div>
             <div class="card menor wrap">
                 <label>Inteligência</label>
-                X
-                <input type="number" size="2">
+                <span id="outputInteligencia"></span>
+                <input id="inputInteligencia" type="number" size="2" oninput="modInteligencia(this.value)" onchange="modInteligencia(this.value)">
             </div>
             <div class="card menor wrap">
                 <label>Destreza</label>
-                X
-                <input type="text" style="text-align:center;" size="2">
+                <span id="outputDestreza"></span>
+                <input id="inputDestreza" type="number" size="2" oninput="modDestreza(this.value)" onchange="modDestreza(this.value)">
             </div>
             <div class="card menor wrap">
                 <label>Sabedoria</label>
-                X
-                <input type="text" style="text-align:center;" size="2">
+                <span id="outputSabedoria"></span>
+                <input id="inputSabedoria" type="number" size="2" oninput="modSabedoria(this.value)" onchange="modSabedoria(this.value)">
             </div>
             <div class="card menor wrap">
                 <label>Constituição</label>
-                X
-                <input type="text" style="text-align:center;" size="2">
+                <span id="outputConstituicao"></span>
+                <input id="inputConstituicao" type="number" size="2" oninput="modConstituicao(this.value)" onchange="modConstituicao(this.value)">
             </div>
             <div class="card menor wrap">
                 <label>Carisma</label>
-                X
-                <input type="text" style="text-align:center;" size="2">
+                <span id="outputCarisma"></span>
+                <input id="inputCarisma" type="number" size="2" oninput="modCarisma(this.value)" onchange="modCarisma(this.value)">
             </div>
         </section>
         
@@ -120,7 +120,6 @@
                 <label for="ataquesemagias">Ataques e Magias</label>
                 <form class="form" action="">
                     <input class="form-input" type="text"  size="30" data-form-input>
-                    <!-- <button class="form-button" data-form-button>+</button> -->
                     <span class="material-icons-outlined" data-form-button>add_circle_outline</span>
                     <!-- PARA REMOVER -->
                     <!-- <span class="material-icons-outlined" data-form-button>remove_circle_outline</span> -->
@@ -136,7 +135,6 @@
                 <label for="equipamentos">Equipamentos</label>
                 <form class="form" action="">
                     <input class="form-input" type="text" size="30" data-form-input-2>
-                    <!-- <button class="form-button" data-form-button-2>+</button> -->
                     <span class="material-icons-outlined" data-form-button-2>add_circle_outline</span>
                 </form>
                 <ul data-list-2>
@@ -145,7 +143,8 @@
             </div>
         </section>
 
-        <!-- <section class="card">
+        <!-- TRABALHAR NESSA PARTE DEPOIS
+        <section class="card">
             <div>Bônus de Proficiência</div>
             <div>Inspiração</div>
             <div>Sabedoria Passiva</div>
@@ -174,6 +173,7 @@
             
         </section>
 
+        <!-- TRABALHAR NESSA PARTE DEPOIS
         <section class="card">
             <span class="material-icons-outlined">info</span>
         </section>
@@ -192,8 +192,9 @@
                     <li><span class="material-icons-outlined">info</span> <a href="#">twitch</a></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <script type="module" src="./componentes/main.js"></script>
+        <script src="./componentes/funcModificadores.js"></script>
     </body>
     </html>

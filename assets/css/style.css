@@ -9,6 +9,7 @@ input, select{
 form {
   display: flex;
 }
+
 a {
   text-decoration: none;
 }
@@ -70,12 +71,6 @@ a {
 .dot.black {
   background-color: #000;
 }
-
-/* .hello {
-  display:inline-block;
-  align-items: baseline;
-  flex-direction: column;
-} */
 
 li.div {
   display: flex;
